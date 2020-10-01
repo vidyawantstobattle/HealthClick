@@ -4,7 +4,7 @@ HealthClick is a telemedicine app which can be employed by hospitals to improve 
 
 Made using Flask, DialogFlow and Bootstrap.
 
-## Made for IEEE SheHacks Hackathon by GHRCE Chapter 
+#### Made for IEEE SheHacks Hackathon by GHRCE Chapter 
 
 HealthCareBusinessTech report states that patients desire the following three functionalities in their apps the most: 
 access to previous medical records
