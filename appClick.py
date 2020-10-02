@@ -1,8 +1,8 @@
-from flask import Flask, render_template, url_for, redirect
+from flask import *
 
 app = Flask(__name__)
 
-itemData = {1:'Iboprofin', 2:'Crocin', 3:'Dolo', 4:'Gelusil', 5:'a', 6:'b', 7:'c', 8:'d', 9:'e', 10:'f', 11:'g', 12:'h'}
+itemData = {49:'Ibuprofen', 39:'Crocin', 80:'Dolo', 120:'Gelusil', 100:'Accutane', 150:'Aspirin', 400:'Azathioprine', 749:'Citalopram', 1299:'Diazepam', 520:'Albuterol', 310:'Allegra', 60:'Benydryl'}
 
 #every page extends base.html
 #main home page
