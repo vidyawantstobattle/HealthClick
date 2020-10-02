@@ -70,21 +70,25 @@
       <nav class="nav-menu d-none d-lg-block">
         <ul>
           <li class="active"><a href="{{ url_for('home') }}">Home</a></li>
+          <li><a href="{{ url_for('about') }}">About Us</a></li>
           <li class="drop-down"><a href="">Services</a>
             <ul>
-              <li><a href="{{ url_for('symptom') }}">Symptom Checker</a></li>
-              <li><a href="{{ url_for('meds') }}">Order Meds</a></li>
-              <li><a href="#">Set A Reminder</a></li>
-              <li><a href="#">Book Appointments</a></li>
-              <li><a href="#">Subscribe Monthly</a></li>
+              <li><a href="{{ url_for('symptom') }}">Check Symptoms</a></li>
+              <li><a href="{{ url_for('meds') }}">Order Medicines</a></li>
+              <li><a href="#">Monthly Subscription</a></li>
+              <li><a href="#">Schedule an Appointment</a></li>
               <li><a href="#">At Home Tests</a></li>
-              <li><a href="#">Health Insurance</a></li>
+              <li><a href="#">Medicine Reminder</a></li>
+
             </ul>
           </li>
+          <li><a href="{{ url_for('insurance') }}">Insurance Guide</a></li>
+
           <!-- <li><a href="{{ url_for('symptom') }}">Symptom Tracker</a></li>
           <li><a href="{{ url_for('meds') }}">Order Meds</a></li> -->
           <li><a href="{{ url_for('login') }}">Login</a></li>
           <li><a href="{{ url_for('register') }}">Register</a></li>
+
         </ul>
 
       </nav><!-- .nav-menu -->
@@ -99,7 +103,7 @@
       <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
-          <h2>A Telemedicine App for your comfort and health.</h2>
+          <h2>A telemedicine initiative to bring hospitals and patients closer together</h2>
           <ol>
             <!-- <li><a href="{{ url_for('home') }}">Home</a></li> -->
             <li><a href="{{ url_for('meds') }}" class="appointment-btn scrollto">Order Now</a></li>
@@ -129,6 +133,12 @@
   {% block cart_page %}
   {% endblock %}
 
+  {% block insurance_page %}
+  {% endblock %}
+
+  {% block about_page %}
+  {% endblock %}
+
   <!-- ======= Footer ======= -->
   <footer id="footer">
 
@@ -136,7 +146,7 @@
 
       <div class="mr-md-auto text-center text-md-left">
         <div class="copyright">
-          &copy; Copyright <strong><span>Medilab</span></strong>. All Rights Reserved
+          &copy; Copyright <strong><span>HealthClick</span></strong>. All Rights Reserved
         </div>
         <div class="credits">
           <!-- All the links in the footer should remain intact. -->
