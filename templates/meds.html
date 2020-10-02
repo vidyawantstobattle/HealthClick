@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block meds_page %}
+
+	<section id="gallery" class="gallery">
+			<div class="container">
+				<div class="section-title">
+	          		<h2>Order Items</h2>
+	        	</div>
+	        </div>
+
+	    <div class="container-fluid">
+	        <div class="row no-gutters">
+	        	{% for i,data in itemData.items() %}
+		          <div class="col-lg-3 col-md-4">
+		            <div class="gallery-item">
+		            	<p>Name: {{data}} </p>
+		            	<p>Price: {{i}}
+		            	<p><a href="{{ url_for('cart') }}"><button type="submit">Add to Cart</button></a><p>
+		            </div>
+		          </div>
+	         	{% endfor %}
+        	</div>
+        </div>
+    </section>
+
+{% endblock %}
